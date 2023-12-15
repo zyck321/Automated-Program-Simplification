@@ -5,11 +5,12 @@
 After downloading the code and dataset files, unzip it. The dataset is in the ``../dataset`` folder,
 the code is in the ``prompts_codet5.zip``, the running environment is in ``environment.txt``.
 
-**To run the code, you need to do the following:**
-1. we run this code on ``Ubuntu16.04`` and ``python 3.8.17``, you need to install the dependency according to ``environment.txt``, 
+### Experimental Setup
+we run this code on ``Ubuntu16.04`` and ``python 3.8.17``, you need to install the dependency according to ``environment.txt``, 
 choose the right version of pytorch according to you cuda version.
-2. unzip ``prompts_codet5.zip``.
-3. unzip ``dataset.zip``, the folders and files are following:
+
+### Datasets
+unzip ``dataset.zip``, the folders and files are following:
 ```
 -initial_dataset
   --small
@@ -32,16 +33,20 @@ choose the right version of pytorch according to you cuda version.
     ---train.jsonl (untagged whole train json format dataset)
     ---valid.jsonl (untagged whole valid json format dataset)
 ```
-4. cd ``prompts_codet5``
+in ``prompts_codet5``
 you can choose to run on different setting by copying different dataset into ``./data`` folder.
 For example, if you want to training and testing on tagged dataset, you need to copy the json file in ``../dataset/tagged/``
 into ``./data``. You can choose to test on big test dataset (``../dataset/tagged/test.jsonl``) or 
 small validate dataset (``../dataset/tagged/small/test.jsonl``).
 
-5. after you copy the dataset into the ``./data`` file, run ``./start_prompts.sh``
+### Predictions
+after you copy the dataset into the ``./data`` file, run ``./start_prompts.sh``
 
-6. after finishing the tuning and testing. To **evalute** the generated simplification: run ``./start_cal_code_bleu.sh``.
+after finishing the tuning and testing. To **evalute** the generated simplification: run ``./start_cal_code_bleu.sh``.
 
+
+
+### SomethingElse
 If you want to **change the parameters of tuning**, you can edit the ``start_prompts.sh``. 
 If you want to **change more paramters**, you can refer to the ``finetune_t5_gene.py`` for editing.
 
@@ -51,13 +56,13 @@ If you need to **compare the cognitive complexity and cyclomatic complexity** of
 ```
 <rule ref="category/java/design.xml/CognitiveComplexity">
     <properties>
-        <property name="reportLevel" value="15" />
+        <property name="reportLevel" value="1" />
     </properties>
 </rule>
 <rule ref="category/java/design.xml/CyclomaticComplexity">
     <properties>
         <property name="classReportLevel" value="80" />
-        <property name="methodReportLevel" value="10" />
+        <property name="methodReportLevel" value="1" />
         <property name="cycloOptions" value="" />
     </properties>
 </rule>
