@@ -39,8 +39,8 @@ For example, if you want to training and testing on tagged dataset, you need to 
 into ``./data``. You can choose to test on big test dataset (``../dataset/tagged/test.jsonl``) or 
 small validate dataset (``../dataset/tagged/small/test.jsonl``).
 
-### Predictions
-after you copy the dataset into the ``./data`` file, run ``./start_prompts.sh``
+### Predictions and Evalution
+copy the dataset into the ``./data`` file, run ``./start_prompts.sh``
 
 after finishing the tuning and testing. To **evalute** the generated simplification: run ``./start_cal_code_bleu.sh``.
 
