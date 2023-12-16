@@ -1,5 +1,13 @@
 # Automated-Program-Simplification
 
+### tables in repo
+the table ``Simplifacation_study`` is studied pr link with simplification type in the whole study.
+
+the table ``motivation_with_type`` is the studied pr link with simplification type in the motivation study, while
+the table ``motivation_with_commitMessage`` is the studied pr link with commit message in the motivation study.
+
+
+
 **The code and dataset are at** https://zenodo.org/records/10390542.
 
 After downloading the code and dataset files, unzip it. The dataset is in the ``../dataset`` folder,
