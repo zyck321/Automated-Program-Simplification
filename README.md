@@ -1,6 +1,6 @@
 # Automated-Program-Simplification
 
-### tables in repo
+### Tables in Current Repo
 the table ``Simplifacation_study`` is studied pr link with simplification type in the whole study.
 
 the table ``motivation_with_type`` is the studied pr link with simplification type in the motivation study, while
