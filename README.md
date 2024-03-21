@@ -80,7 +80,7 @@ If you need to **compare the cognitive complexity and cyclomatic complexity** of
 </rule>
 ```
 
-Following are the issues that we submitted to RefactoringMiner:
+### Following are the issues that we submitted to RefactoringMiner
 
 https://github.com/tsantalis/RefactoringMiner/issues/678
 
