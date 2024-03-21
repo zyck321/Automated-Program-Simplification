@@ -81,11 +81,20 @@ If you need to **compare the cognitive complexity and cyclomatic complexity** of
 ```
 
 Following are the issues that we submitted to RefactoringMiner:
+
 https://github.com/tsantalis/RefactoringMiner/issues/678
+
 https://github.com/tsantalis/RefactoringMiner/issues/679
+
 https://github.com/tsantalis/RefactoringMiner/issues/681
+
 https://github.com/tsantalis/RefactoringMiner/issues/682
+
 https://github.com/tsantalis/RefactoringMiner/issues/680
+
 https://github.com/tsantalis/RefactoringMiner/issues/683
+
 https://github.com/tsantalis/RefactoringMiner/issues/684
+
 https://github.com/tsantalis/RefactoringMiner/issues/685
+
