@@ -63,7 +63,6 @@ after finishing the tuning and testing. To **evalute** the generated simplificat
 If you want to **change the parameters of tuning**, you can edit the ``start_prompts.sh``. 
 If you want to **change more paramters**, you can refer to the ``finetune_t5_gene.py`` for editing.
 
-If you want to **find duplicated code with CPD**, please view ``https://docs.pmd-code.org/pmd-doc-6.31.0/pmd_userdocs_cpd.html`` for detail information.
 
 If you need to **compare the cognitive complexity and cyclomatic complexity** of the code, you can refer to ``https://docs.pmd-code.org/pmd-doc-6.55.0/pmd_rules_java_design.html#cognitivecomplexity`` for the configuration of relevant PMD rules.Our ruleset is like this:
 ```
@@ -80,3 +79,13 @@ If you need to **compare the cognitive complexity and cyclomatic complexity** of
     </properties>
 </rule>
 ```
+
+Following are the issues that we submitted to RefactoringMiner:
+https://github.com/tsantalis/RefactoringMiner/issues/678
+https://github.com/tsantalis/RefactoringMiner/issues/679
+https://github.com/tsantalis/RefactoringMiner/issues/681
+https://github.com/tsantalis/RefactoringMiner/issues/682
+https://github.com/tsantalis/RefactoringMiner/issues/680
+https://github.com/tsantalis/RefactoringMiner/issues/683
+https://github.com/tsantalis/RefactoringMiner/issues/684
+https://github.com/tsantalis/RefactoringMiner/issues/685
