@@ -51,6 +51,7 @@ you can choose to run on different setting by copying different dataset into ``.
 For example, if you want to training and testing on tagged dataset, you need to copy the json file in ``../dataset/tagged/``
 into ``./data``. You can choose to test on big test dataset (``../dataset/tagged/test.jsonl``) or 
 small validate dataset (``../dataset/tagged/small/test.jsonl``).
+We have uploaded our crawler together with the dependency into the repository. This crawler is to crawl program simplification data to tune the CodeT5.
 
 ### Predictions and Evalution
 copy the dataset into the ``./data`` file, run ``./start_prompts.sh``
