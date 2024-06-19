@@ -64,7 +64,7 @@ If you want to **change the parameters of tuning**, you can edit the ``code_to_p
 If you want to **change more paramters**, you can refer to the ``code_to_prompts_codet5/prompts_codet5/finetune_t5_gene.py`` for editing.
 
 
-If you need to **compare the cognitive complexity and cyclomatic complexity** of the code, you can refer to ``https://docs.pmd-code.org/pmd-doc-6.55.0/pmd_rules_java_design.html#cognitivecomplexity`` for the configuration of relevant PMD rules.Our ruleset is like this:
+If you need to **compare the cognitive complexity and cyclomatic complexity** of the code, you can refer to <https://docs.pmd-code.org/pmd-doc-6.55.0/pmd_rules_java_design.html#cognitivecomplexity> for the configuration of relevant PMD rules.Our ruleset is like this:
 ```
 <rule ref="category/java/design.xml/CognitiveComplexity">
     <properties>
