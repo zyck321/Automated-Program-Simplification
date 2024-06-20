@@ -13,10 +13,12 @@ the table ``resource/table/motivation_with_commitMessage.md`` is the studied pr 
 ### Experimental Setup
 **The code and dataset are at** <https://zenodo.org/records/12142696>.
 
-After downloading the code and dataset files, unzip it. The dataset is in the ``../dataset`` folder,
-the code is in the ``prompts_codet5`` folder, the running environment is in ``environment.txt``.
+After downloading the code and dataset files, unzip it. The dataset is in the ``dataset.zip`` on zenodo,
+the code is in the ``resource/code_to_prompts_codet5/prompts_codet5`` folder, the running environment is in ``resource/code_to_prompts_codet5/environment.txt``.
 
-we run this code on ``Ubuntu16.04`` and ``python 3.8.17``, you need to install the dependency according to ``environment.txt``, 
+And the CodeXGLUE we used is in ``CodeXGLUE.zip``,please extract it to folder ``resource/code_to_prompts_codet5/prompts_codet5`` bdefore use.
+
+we run this code on ``Ubuntu16.04`` and ``python 3.8.17``, you need to install the dependency according to ``resource/code_to_prompts_codet5/environment.txt``, 
 choose the right version of pytorch according to you cuda version.
 
 ### Datasets
@@ -43,25 +45,24 @@ in ``dataset/remove_duplication``, the folders and files are following:
     ---train.jsonl (untagged whole train json format dataset)
     ---valid.jsonl (untagged whole valid json format dataset)
 ```
-in ``prompts_codet5``
-you can choose to run on different setting by copying different dataset into ``code_to_prompts_codet5/prompts_codet5/data`` folder.
+in ``resource/code_to_prompts_codet5/prompts_codet5``
+you can choose to run on different setting by copying different dataset into ``resource/code_to_prompts_codet5/prompts_codet5/data`` folder.
 For example, if you want to training and testing on tagged dataset, you need to copy the json file in ``dataset/remove_duplication/tagged/``
-into ``code_to_prompts_codet5/prompts_codet5/data``. You can choose to test on big test dataset (``dataset/remove_duplication/tagged/test.jsonl``) or 
+into ``resource/code_to_prompts_codet5/prompts_codet5/data``. You can choose to test on big test dataset (``dataset/remove_duplication/tagged/test.jsonl``) or 
 small validate dataset (``dataset/remove_duplication/tagged/small/test.jsonl``).
-
 
 We have uploaded our crawler together with the dependency into the repository. This crawler is to crawl program simplification data to tune the CodeT5, the crawler is at (``resource/crawler.py``).
 
 ### Predictions and Evalution
-copy the dataset into the ``code_to_prompts_codet5/prompts_codet5/data`` file, run ``./start_prompts.sh`` in folder``code_to_prompts_codet5/prompts_codet5``.
+copy the dataset into the ``resource/code_to_prompts_codet5/prompts_codet5/data`` file, run ``./start_prompts.sh`` in folder``resource/code_to_prompts_codet5/prompts_codet5``.
 
-after finishing the tuning and testing. To **evalute** the generated simplification: run ``./start_cal_code_bleu.sh`` also in folder``code_to_prompts_codet5/prompts_codet5``.
+after finishing the tuning and testing. To **evalute** the generated simplification: run ``./start_cal_code_bleu.sh`` also in folder``resource/code_to_prompts_codet5/prompts_codet5``.
 
 
 
 ### SomethingElse
-If you want to **change the parameters of tuning**, you can edit the ``code_to_prompts_codet5/prompts_codet5/start_prompts.sh``. 
-If you want to **change more paramters**, you can refer to the ``code_to_prompts_codet5/prompts_codet5/finetune_t5_gene.py`` for editing.
+If you want to **change the parameters of tuning**, you can edit the ``resource/code_to_prompts_codet5/prompts_codet5/start_prompts.sh``. 
+If you want to **change more paramters**, you can refer to the ``resource/code_to_prompts_codet5/prompts_codet5/finetune_t5_gene.py`` for editing.
 
 
 If you need to **compare the cognitive complexity and cyclomatic complexity** of the code, you can refer to <https://docs.pmd-code.org/pmd-doc-6.55.0/pmd_rules_java_design.html#cognitivecomplexity> for the configuration of relevant PMD rules.Our ruleset is like this:
