@@ -11,7 +11,7 @@ the table ``resource/table/motivation_with_commitMessage.md`` is the studied pr 
 
 
 ### Experimental Setup
-**The code and dataset are at** <https://zenodo.org/records/12142696>.
+**The code and dataset are at** <https://zenodo.org/records/12176049>.
 
 After downloading the code and dataset files, unzip it. The dataset is in the ``dataset.zip`` on zenodo,
 the code is in the ``resource/code_to_prompts_codet5/prompts_codet5`` folder, the running environment is in ``resource/code_to_prompts_codet5/environment.txt``.
