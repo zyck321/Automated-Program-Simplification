@@ -382,15 +382,4 @@
 |  380   |  https://github.com/SubSage/GDCalaga/pull/6    |     code style reformat/control stream(java ternary conditional operator)                |
 |  381   |  https://github.com/cbeust/testng/pull/331    |   use apis/control stream(java conditional expression simplification)/merge imports                  |
 |  382   |  https://github.com/Silverpeas/Silverpeas-Core/pull/247    |  extract(extract method)/merge imports                   |
-|  383   |  https://github.com/awslabs/aws-advanced-jdbc-wrapper/pull/259    |  Try-with-resources                 |
-|  384   |  https://github.com/tronprotocol/java-tron/pull/3782   |  use annotations                 |
-|  385   |  https://github.com/alibaba/fastjson/pull/3701    |  Simplify boolean and algebraic expression                  |
-|  386   |  https://github.com/ZhuXiaoBing-cn/azure-sdk-for-java/pull/1    |  Replace variable with attribute                   |
-|  387   |  https://github.com/informatici/openhospital-gui/pull/413   |  delete                  |
-|  388   |  https://github.com/Lord-Velion/VigenereCipher/pull/19    |  Replace variable with attribute               |
-|  389   |  https://github.com/senx/warp10-platform/pull/834    |  merge conditional                   |
-|  390   |  https://github.com/xing/java-beetle/pull/35    |  inline variable                   |
-|  391   |  https://github.com/looker-open-source/bqjdbc/pull/67    |  delete                   |
-|  392   |  https://github.com/tronprotocol/java-tron/pull/3335    |  Extract method                 |
-|  393   |  https://github.com/tronprotocol/java-tron/pull/3282   |  Extract method                |
 
